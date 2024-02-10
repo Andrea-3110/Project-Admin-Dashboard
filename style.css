@@ -1,0 +1,281 @@
+:root{
+   --cyan: #c55127;
+   --green: #388659;
+   --light-green: #52AA5E;
+   --zomp: #52AA8A;
+   --skyblue: #2BD9FE;
+   font-family: fantasy;
+}
+
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+
+body{
+   display: flex;
+   height: 100%;
+}
+
+.sidebar{
+   background-color: var(--cyan);
+   width: 17rem;
+   display: flex;
+   flex-direction: column;
+
+   gap: 20px;
+   color: white;
+
+
+
+}
+
+.sidebar img{
+   filter: invert(100%);
+}
+
+.sidebar .logo{
+   font-size: 1.3em;
+   display: flex;
+   align-items: center;
+   margin-bottom: 20px;
+}
+.logo img{
+   height: 50px;
+   margin: 10px;
+}
+
+.first-list,.second-list{
+   font-size: 1.2em;
+}
+
+.first-list{
+   margin-bottom: 50px;
+}
+
+.first-list ul,.second-list ul{
+   display: flex;
+   justify-content: start;
+   flex-direction: column;
+   gap: 15px;
+}
+
+.first-list ul li,.second-list ul li{
+   display: flex;
+   align-items: center;
+}
+
+.first-list img, .second-list img{
+   height: 23px;
+   margin: 0 20px 0 20px ;
+}
+
+
+.container{
+   height: 100%;
+   width: 100%;
+   background: #ccc;
+
+}
+
+.header{
+   height: 12em;
+   display: grid;
+   grid-template: 50% 50% / 75% 25%;
+   padding: 10px 20px 10px 20px;
+   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+   background: #fff;
+
+}
+.searchbar{
+   display: flex;
+   align-items: center;
+   height: 40px;
+}
+.searchbar img{
+   height: 50px;
+   padding: 10px;
+}
+.searchbar input{
+   height: 30px;
+   width: 50em;
+   border-radius: 50px;
+   border: none;
+   background: #ddd;
+}
+
+
+.profileinfo{
+   height: 40px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+}
+.profileinfo .bell{
+   height: 30px;
+   border-radius: 50%;
+}
+
+
+.profileinfo .pfp{
+   height: 50px;
+   border-radius: 50%;
+}
+
+.profilewelcome{
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   
+}
+
+.image img{
+   height: 90px;
+   border-radius: 50%;
+}
+
+.buttons{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+}
+.buttons button{
+   padding: 10px 20px;
+   border-radius: 30px;
+   border: none;
+   color: white;
+   background: var(--light-green);
+   font-size: 1em;
+
+}
+
+.main{
+   position: relative;
+   padding: 20px;
+   display: flex;
+
+}
+
+.projectsContainer{
+   width: 70%;
+}
+.projectsTitle{
+   font-size: 1.3em;
+   padding-bottom: 15px;
+   padding-left: 20px;
+}
+.cardContainer{
+   padding-left: 20px;
+   display: grid;
+   gap: 20px;
+   grid-template-columns: repeat(2,50%);
+   grid-template-rows: repeat(3,30%);
+}
+
+
+.card{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+
+
+   height: 200px;
+   width: 400px;
+   background: #fff;
+   padding: 20px;
+   border-radius:10px ;
+   border-left: 10px inset var(--zomp);
+
+   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+   
+}
+.iconContainer{
+   align-self: flex-end;
+   justify-self: flex-end;
+}
+
+
+.card p{
+  color: #555;
+  font-size: 0.9em;
+
+}
+
+.iconContainer img{
+   height: 30px;
+
+}
+
+.infos{
+   width: 30%;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+.annTitle{
+   padding-bottom: 10px;
+   font-size: 1.2em;
+}
+.annBox{
+   background: #fff;
+   padding: 20px;
+   border-radius: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+.ann{
+   width: 75%;
+   padding-bottom: 20px;
+   padding-top: 20px;
+}
+.ann:nth-child(1),.ann:nth-child(2){
+   border-bottom: 2px solid #ccc;
+
+}
+.ann h3{
+   font-size: 1.2em;
+}
+.ann p{
+   font-size: 0.9em;
+   color: #555;
+   
+}
+
+
+.treTitle{
+   padding-bottom: 10px;
+   font-size: 1.2em;
+}
+
+.trendBox{
+   background: #fff;
+   padding: 20px;
+   border-radius: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.trend{
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+
+.trend img{
+   height: 60px;
+   border-radius: 50%;
+}
+.trendBox{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
